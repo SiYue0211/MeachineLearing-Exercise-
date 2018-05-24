@@ -8,3 +8,4 @@
 算法部分主要内容
 - [KNN (K近邻算法)](https://github.com/SiYue0211/MeachineLearing-Exercise-/tree/master/KNN)
 
+- [决策树算法](https://github.com/SiYue0211/MeachineLearing-Exercise-/tree/master/DecisionTree)
