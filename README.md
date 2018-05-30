@@ -9,3 +9,7 @@
 - [KNN (K近邻算法)](https://github.com/SiYue0211/MeachineLearing-Exercise-/tree/master/KNN)
 
 - [决策树算法](https://github.com/SiYue0211/MeachineLearing-Exercise-/tree/master/DecisionTree)
+
+- [朴素贝叶斯算法](https://github.com/SiYue0211/MeachineLearing-Exercise-/tree/master/BayesianClassification)
+
+- [logistic regression](https://github.com/SiYue0211/MeachineLearing-Exercise-/tree/master/LogisticReg)
