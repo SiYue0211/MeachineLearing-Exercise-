@@ -36,6 +36,7 @@ def smoSimple(dataMatIn, classLabels, C, toler, maxIter):
                         (dataMatrix * dataMatrix[i, :].T)) + b
             # 真实值和预测值的差值
             Ei = fXi - float(labelMatrix[i])
+            # 如果在容错范围内，不需要处理，如果超出容错范围，进入if语句
             if ((labelMatrix[i]*Ei < - toler) and (alphas[i] < C)) or \
                     ((labelMatrix[i]*Ei > toler) and (alphas[i] > 0)):
                 # 选一个和i不同的数作为j
@@ -47,6 +48,7 @@ def smoSimple(dataMatIn, classLabels, C, toler, maxIter):
                 alphaIold = alphas[i].copy()
                 alphaJold = alphas[j].copy()
 
+                # data_i, data_j不同的标签，处理方法不同
                 if labelMatrix[i] != labelMatrix[j]:
                     L = max(0, alphas[j] - alphas[i])
                     H = min(C, C + alphas[j] - alphas[i])
